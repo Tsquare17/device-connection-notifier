@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.tsquare.deviceconnectionnotifier.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <TextField fx:id="twilio_account_sid" promptText="Twilio Account SID" />
+    <TextField fx:id="twilio_auth_token" promptText="Twilio Auth Token" />
+    <TextField fx:id="twilio_phone" promptText="Twilio Phone Number" />
+    <TextField fx:id="phone" promptText="To Phone Number" />
+    <TextArea fx:id="ip_addresses" prefHeight="200.0" prefWidth="200.0" promptText="IP Addresses New Line Delimited" />
+
+    <Button fx:id="monitor_button" onAction="#toggleMonitoring" text="Start Monitoring" />
+</VBox>
